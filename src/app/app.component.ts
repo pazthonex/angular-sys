@@ -4,6 +4,8 @@ import { HeaderComponent } from './includes/header/header.component';
 import { FooterComponent } from './includes/footer/footer.component';
 import { SidebarComponent } from './includes/sidebar/sidebar.component';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
+import { AuthenticatePageComponent } from './auth/authenticate-page/authenticate-page.component';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +15,9 @@ import { CommonModule } from '@angular/common';
     CommonModule,
     HeaderComponent,
     FooterComponent,
-    SidebarComponent
+    SidebarComponent,
+    HttpClientModule,
+    AuthenticatePageComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
