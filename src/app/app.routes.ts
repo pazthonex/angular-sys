@@ -6,6 +6,10 @@ import { Page404Component } from './includes/page404/page404.component';
 
 export const routes: Routes = [
     { path : 'dashboard' , component : DashboardComponent , title : 'Dashboard'},
+    // {
+    //     path: 'products',
+    //     loadChildren: () => import('./customers/customers.module').then(m => m.CustomersModule)
+   // },
     { path : 'products' , component : ProductsComponent , title : 'Products'},
     { path: '', redirectTo: '/dashboard',  pathMatch: 'full' },
     { path: '**', component: Page404Component },
